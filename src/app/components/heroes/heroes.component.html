@@ -1,0 +1,12 @@
+<h1>Heroes</h1><small>de Marvel y DC</small>
+<hr>
+
+
+<div class="card-columns">
+
+    <!-- foo es una variable que estamos creando. heroes si hace referencia al arreglo. -->
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="foo" [index]="i" *ngFor="let foo of heroes; let i=index"></app-heroe-tarjeta>
+    <!-- La "i" de [index] referencia al index del ngFor -->
+    <!-- El verHeroe($event) Para recibir el evento que estoy emitiendo desde heroeSeleccionado -->
+
+</div>
